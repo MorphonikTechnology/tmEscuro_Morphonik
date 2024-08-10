@@ -1,0 +1,864 @@
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: Arial, sans-serif; /*caso a fonte Gilroy não funciona deverá ser substituida por Arial "Todas as Partes" */
+}
+
+/*A fonte Gilroy foi exportada */
+/*@font-face para poder utilizar as fontes exportadas*/
+
+
+
+@font-face {  /*Fonte especifica da NavBar*/
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {  /*Fonte especifica da NavBar*/
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.ttf');
+}
+
+@font-face {  /*Fonte especifica da NavBar*/
+    font-family: 'Gilroy-UltraLight';
+    src: url('Gilroy-UltraLight.ttf');
+}
+
+@font-face {  /*Fonte especifica da NavBar*/
+    font-family: 'Gilroy-Thin';
+    src: url('Gilroy-Thin.ttf');
+}
+
+
+
+/*programando a nav bar no geral*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /*cor da navbar*/
+    padding: 15px 30px;
+    height: 55px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/*especificando a imagem do logo que aparece na navbar*/
+.navbar-logo img {
+    height: 85px;  /*ajustando o tamanho*/
+    width: 85px; /*ajustando o tamanho*/
+    margin-top: 24px; /*margem em relação ao topo*/
+}
+
+/*especificando os links das sessões do site*/
+.navbar-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 550px;
+}
+
+.navbar-links li {
+    margin: 0 20px;
+
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    font-family:'Gilroy-SemiBold'; /*ver como fazer isso*/
+    
+    
+}
+
+.navbar-links a:hover {
+    color: #ff8a46;
+
+}
+
+/*para nao deixar um sobre o outro*/
+.navbar-icons {
+    display: flex;
+    margin-right:55px; /*arrumando os ícones na navbar*/
+}
+
+.navbar-icons .icon {
+    margin-left:20px;
+}
+
+.navbar-icons .icon img {
+    height: 45px;
+    width: 45px;
+   
+}
+
+.navbar-fundo1 {
+    margin-top: 55px;
+}
+
+.navbar-fundo1 img {
+    height:1190px; /* Ajustei o valor para um tamanho maior */
+    width: 1519px;  /* Ajustei o valor para um tamanho maior */
+    margin-top:-38px; /*37 fica um uma linha bem pequena (espeçamento)*/
+}
+
+.navbar-fundo1 .logocompleta {
+    position: absolute;
+    top: 55%; /*em relação ao topo*/
+    left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+    transform: translate(-50%, -50%);
+    height:400px; /*definindo o tamanho*/
+    width:800px; /*definindo o tamanho*/
+}
+
+
+/* Seção de Serviços, Nossos Objetivos e Segmentos*/
+
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -390px;
+}
+
+.sobreempresa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Aumenta a largura máxima */
+}
+
+.servico, .objetivo, .segmentos {
+    background-color: rgb(0, 0, 0); /*cor de fundo*/
+    box-shadow: 0 80px 70px rgba(249, 246, 246, 0.1);  /*importante*/
+    overflow: hidden; 
+    width: calc(30% - 20px); /* Diminui a largura e o espaçamento em porcentagem */
+    margin: 0 30px 60px; /* Aumenta o espaçamento entre as divs ()*/
+    text-align: center; /*modificando o texto*/
+    position: relative;
+}
+
+.servico img, .objetivo img, .segmentos img {
+    width: 100%;
+    height: auto;
+    display: block;
+ 
+}
+
+
+@font-face {  /*Fonte especifica para os titulos*/
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+.servico h1, .objetivo h1, .segmentos h1 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    font-weight: bold; /* Adiciona negrito */
+    font-family:'Gilroy-Bold';
+    color: #d9d9d9;
+}
+
+@font-face {  /*Fonte especifica para os textos*/
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+ h1:hover{
+    color: #ff8a46;
+    
+}
+
+.servico p, .objetivo p, .segmentos p {
+    font-size: 19px;
+    color: #ffffff;
+    padding: 5px 30px; /* Adiciona padding para o texto (paragrafo */
+    font-family:'Gilroy-Medium';
+    /*tentando deixar padronizado*/
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 1.7;
+    hyphens: auto; /* Permite a quebra automática de palavras */
+    
+  
+}
+
+.linha4{
+    width: 95%;
+    height: 4px;
+    background-color: #d9d9d9;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+/* Começo do Saiba Mais*/
+
+/* Inicia o tópico "Pretende fazer um projeto?" */
+
+.conteudo{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: 0 7px 8px rgba(114, 103, 103, 0.893);
+   height: 350px;  /*tamanho da div*/
+   width: 460px;
+   padding: 40px;
+}
+
+.overlay {
+    height: 700px;/*tamanho da imagem de fundo */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 20px 3.5%;
+    box-sizing: border-box;
+    position: relative; /* Adiciona posição relativa para posicionar a imagem de fundo */
+}
+
+
+
+
+.background-image {
+    background-size: cover;
+    position: absolute; /* Posiciona a imagem de fundo absolutamente dentro da div */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
+}
+
+
+
+.conteudo h2 {
+    font-size: 35px; /* Define o tamanho da fonte como 24 pixels */
+    font-weight: bold;
+    color: #fff5f5;
+    font-family: 'Gilroy-Bold';
+    margin-top: -15px;
+
+
+}
+
+h2:hover{
+    color: #ff8a46;
+}
+
+
+.conteudo p {
+    font-size: 23px;
+    color: #ffffff;
+    font-family: 'Gilroy-Medium';
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 1.7;
+    hyphens: auto;
+   
+}
+
+.button {
+    background-color:#FF914D; /* Define a cor de fundo do botão */
+    color: #000;
+    border: none; /* Remove qualquer borda padrão do botão */
+    font-weight: bold;
+    padding: 6px 50px;
+    cursor: pointer; /* Define o cursor ao passar sobre o botão */
+    font-size: 30px;
+    text-decoration: none; /* Remove qualquer sublinhado do texto do botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança da cor de fundo */
+    font-family: 'Gilroy-Bold';
+    width: 300px;
+    margin-top: 15px;
+    /*
+    height:100px;
+    width:500px;*/
+}
+
+.button:hover {
+    background-color: #ff4500;
+}
+
+/*ÍNICO DO PRINCIPAIS SERVIÇOS*/
+/* Contêiner geral */
+.container {
+    background-image: url('img/fundo_color.jpg');
+    background-position: center;
+    display: flex;
+    justify-content: center; /* Centraliza os contêineres na tela */
+    align-items: center;
+    padding: 50px 3.5%;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -50px;
+}
+
+/* Estilo do título */
+.container h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+    font-family: 'Gilroy-Bold';
+    margin-left: 20px;
+    color: #ffff;
+}
+
+.container h1:hover {
+    color: #e66f00;
+}
+
+/* Contêiner dos serviços */
+.services {
+    display: flex;
+    justify-content: center; /* Centraliza os serviços */
+    margin-top: 5px;
+    flex-wrap: wrap;
+    gap:60px; /* Espaçamento entre os contêineres */
+}
+
+/* Contêiner individual de serviço */
+.service1, .service2 {
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 500px; /* Ajusta a largura do contêiner */
+    height: 600px; /* Define uma altura para o contêiner */
+    text-align: center;
+    flex-grow: 1;
+    margin-bottom: 80px;
+    box-shadow: 0 80px 70px rgba(81, 66, 66, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Espaça o conteúdo uniformemente dentro do contêiner */
+    padding: 20px; /* Adiciona um padding interno */
+   
+}
+
+/* Parágrafos dentro dos serviços */
+.service1 p, .service2 p {
+    margin: 0;
+    padding: 35px; /* Adiciona padding para o texto */
+    font-size: 21px;
+    font-family: 'Gilroy-Medium';
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 1.7;
+    hyphens: auto;
+    flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
+    color: #ffff;
+}
+
+/* Imagens dentro dos serviços */
+.service1 img, .service2 img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 25px; /* Arredonda apenas a imagem */
+    object-fit: cover;
+}
+
+
+/*arrumando individualmente as imagens*/
+.service1 img{
+    height: 350px;
+    width: 570px; /*largura*/
+
+}
+
+.service2 img{
+    height: 350px;
+    width: 570px; /*largura*/
+}
+
+/* Linha divisória */
+.linha {
+    width: 100%;
+    height: 4px; 
+    background-color: #d9d9d9;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+}
+
+
+/* Limita a largura máxima dos elementos com a classe .text para 300 pixels em telas com largura mínima de 500 pixels. */
+@media (min-width: 500px) {
+    .text {
+        max-width: 300px; /* Reduz largura máxima do texto */
+    }
+}
+
+
+/* começando a div sobre a empresa - somente texto*/
+
+
+@font-face {  /*Fonte especifica para os textos*/
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+.img1 {
+    width:1519px;
+    height: auto;
+    margin-top:-250px;
+}
+ 
+.titulo1 {
+    font-size:88px;
+    font-weight: bold;
+    color: #ff6700;
+    margin-top:-700px;
+    margin-left:150px;
+    font-family: 'Gilroy-Bold';
+}
+
+.titulo2 {
+    font-size:28px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 85px;
+    font-family: 'Gilroy-Bold';
+}
+
+.Empresa2 {
+    margin-top:-300px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left:40px;
+}
+
+.highlight {
+    color: #ff6700;
+    font-weight: bold;
+    font-family: 'Gilroy-Bold';
+}
+
+.p1
+{
+    color: white; /* Garante que o texto seja legível sobre a imagem de fundo */
+    margin-left: 750px;
+    font-size:31px;
+    font-family: 'Gilroy-Bold';
+    
+}
+
+.p2 {
+    color: white; /* Garante que o texto seja legível sobre a imagem de fundo */
+    margin-right:150px;
+    text-align: center;       /* Centraliza texto dentro do elemento */
+    font-size: 21px;
+    font-family:'Gilroy-Medium';
+    margin-left:800px;
+     /*tentando deixar padronizado*/
+     text-align: justify;
+     text-align-last: justify;
+     line-height: 1.7;
+     hyphens: auto; /* Permite a quebra automática de palavras */
+}
+
+
+/*Parte do carrossel*/
+
+.img2 {
+    width:1519px;
+    height: auto;
+    margin-top:120px; /*exatamente na medida da outra div*/
+}
+
+
+/*Importante - estilizando o carrossel ---------------------------------------------------------------------*/
+/* Container principal */
+.slides {
+    display: flex;
+    max-width: 1050px; /*espaçamento*/
+    margin-top: -750px;
+    margin-left:100px;
+    
+
+}
+
+/* Estilo do carrossel */
+.carousel {
+    position: relative;
+    width: 60%;
+    display:flex;
+    overflow: hidden;
+    
+    
+}
+
+/* Estilo dos itens do carrossel */
+.carousel-item {
+    min-width: 50%;
+    display: none; /* Esconder todas as imagens inicialmente */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px; /*é aqui que arruma o espaço*/
+}
+
+.carousel-item.active {
+    display: block; /* Mostrar o item ativo */
+}
+
+
+/* Estilo das imagens */
+.carousel-item img {
+    max-width: 100%; /* Ajusta a largura máximapara o tamanho do contêiner */
+    height: 1005; /* Mantém a proporção da imagem */
+    height: 290px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+/* Estilo das setas do carrossel */
+.carousel .arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-70%);
+    margin-top: -800;
+}
+
+
+
+/*Posibilidades de fonte+*/
+
+@font-face {  /*Fonte especifica para os textos*/
+    font-family: 'Gilroy-SemiBold';
+    src: url('Gilroy-SemiBold.ttf');
+}
+
+@font-face {  /*Fonte especifica para os textos*/
+    font-family: 'Gilroy-Back';
+    src: url('Gilroy-Black.ttf');
+}
+
+@font-face {  /*Fonte especifica para os textos*/
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+
+/*Classe dos Nomes dos Funcionários*/ 
+
+.Nomefunc{
+    font-family: 'Gilroy-SemiBold';
+    font-size: 25px;
+}
+
+/*Classe para os Cargos*/
+.Cargo{
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+}
+
+.arrows .st1{
+    margin-left:-700px;
+    cursor: pointer; /* Mudar o cursor para pointer */
+}
+
+ .st2{
+    margin-left:650px;
+    cursor: pointer; /* Mudar o cursor para pointer */
+    margin-top: 90px;
+
+}
+ 
+.equipe {
+    font-size:28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top:-10px;
+    margin-left:1020px;
+    font-family: 'Gilroy-Bold';
+}
+
+.somos{
+    font-size:115px;
+    margin-top:-35px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-left: 970px;
+    font-family: 'Gilroy-Bold';
+    
+}
+
+.quem{
+    font-size:115px;
+    margin-top:-440px;
+    font-weight: bold;
+    color: rgb(255, 111, 33);
+    margin-left: 1000px;
+    font-family: 'Gilroy-Bold';   
+}
+
+
+
+
+
+/* Estilo das descrições */
+.description {
+    color: #fff; /* Cor do texto */
+    padding: 10px;
+}
+
+
+/* Estilo do texto */
+
+
+/*fim do carrossel*/
+
+
+.linha1 {
+    width: 90%;
+    height: 4px;
+    margin-left: 80px;
+    background-color: #d9d9d9;
+    margin-top:0px;
+    margin-bottom: 20px;
+}
+
+
+/*Parte do forms*/
+
+
+.contatos-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    margin-top:210px;
+}
+
+.contatos-form {
+    width: 40%;
+    background: #000000;
+    padding: 20px;
+    box-shadow: 0 0 20px #ff850b;
+    border-radius: 8px;
+    border-color: #af0909;
+}
+
+.contatos-form h2 {
+    color: #ff7f00;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size:48px;
+    font-family: 'Gilroy-Bold';
+}
+
+.contatos-form p {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family:'Gilroy-Bold';
+    font-size:22px;
+    text-align: center;
+    margin-top:-5px;
+
+}
+
+.contatos-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contatos-form input, .contatos-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    /*border-radius: 5px -- para arredondar a borda se for preciso*/
+    font-family:'Gilroy-Medium';
+    box-shadow: 0 2px 5px rgba(255, 87, 51, 0.5); /* Sombra específica para o campo Nome */
+    height:80px; /*do mesmo tamanho que os demais elementos*/
+    width:435px; /*alinhado */
+    margin-left:70px; /*alinhado*/
+    border-color: #ff8400;
+    box-shadow: 0 0 10px #ff850b;
+   
+
+    
+}
+
+/*Formatando o campo nome*/
+
+form input#nome {
+    border-color: #ff8400;
+    box-shadow: 0 0 10px #ff850b;
+    height:20px;
+    width:190px;
+    margin-left:70px;
+    font-family: 'Gilroy-Medium';
+}
+
+/*Formatando o campo telefone*/
+form input#phone {
+    border-color: #ff8400;
+    box-shadow: 0 0 10px #ff850b;
+    height:20px;
+    width:190px;
+    margin-left:315px;
+    margin-top:-52px;
+    font-family: 'Gilroy-Medium';
+    
+    
+
+}
+
+/*Formatando o campo Email*/
+form input#email {
+    border-color: #ff8400;
+    height:20px; /*do mesmo tamanho que os demais elementos*/
+    width:435px; /*alinhado */
+    box-shadow: 0 0 10px #ff850b;
+    font-family: 'Gilroy-Medium';
+    margin-left:70px; /*alinhado*/
+}
+
+
+.contatos-form button {
+    padding: 10px;
+    border: none;
+    background-color: #ff7f00; /*se for preciso mudar a cor do botão */
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    height:50px;
+    width:150px;
+    margin-left:235px;
+    border-color: #ff8400;
+    font-family: 'Gilroy-Medium';
+}
+
+
+/*Para ficar mais escuro quando passar o mouse*/
+.contatos-form button:hover {
+    background-color: #e66f00;
+    box-shadow: 0 0 70px #ffb7a7;
+}
+
+.contatos-image {
+    width: 40%;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+.contatos-image img {
+    width: 80%;
+    background-color: #000000;
+    border-radius:10px;
+    margin-left:70px;
+    margin-top:55px;
+
+}
+
+
+/*parte do rodapé*/
+
+@font-face {  /*Fonte especifica para os textos*/
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:px;
+    color:#ffff; /*cor dos elementos do rodapé*/
+    margin-top:-350px;
+}
+
+.footer-texto {
+    width:37%;
+    font-size: 17px;
+    font-family:'Gilroy-Medium';
+    margin-left:300px;
+    display: flex;
+    margin-top:-45px;
+    text-align: justify;
+    text-align-last: justify;
+    line-height: 1.7;
+}
+
+.footer-icones img {
+    width:60px;
+    margin-top:50px;
+    margin-left:30px;
+}
+
+.copy{
+    margin-top:50px;
+    color:#ffffff;
+    margin-left:465px;
+    font-size:20px;
+    margin-top:60px;
+    font-family:'Gilroy-Medium';
+}
+
+.img3{
+    width:1519px;
+    margin-top:-50px; /*exatamente na medida da outra div*/
+    height: 635px;
+    
+}
+
+.linha3 {
+    width: 85%;
+    height:3px;
+    margin-left:15px; /*posiçao da linha do rodapé*/
+    background-color: #f54c03;
+    margin-top:-130px;
+    margin-bottom: 20px;
+}
+
+.sm{
+ font-size:35px;
+ margin-top:-100px;
+ margin-left:15px;
+ display: flex;
+ font-family: 'Gilroy-SemiBold';
+
+
+}
+
+.text1{
+font-size:20px;
+margin-left:90px;
+display: flex; /*espaço entre os outro elementos*/
+padding-left:15%; /*espaço entre os outro elementos*/
+font-family:'Gilroy-Medium';
+
+
+}
+
+.text2{
+    font-size:20px;
+    margin-left:190px;
+    margin-top:-90px;
+    display: flex;
+    padding-left:50%; /*espaço entre os outro elementos*/
+    font-family:'Gilroy-Medium';
+
+}
+
+.text3{
+    font-size:20px;
+    margin-left:280px;
+    margin-top:-93px;
+    display: flex;
+    padding-left:80%; /*espaço entre os outro elementos*/
+    font-family:'Gilroy-Medium';
+
+    
+}
+
