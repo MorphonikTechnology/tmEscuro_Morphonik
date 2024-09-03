@@ -116,6 +116,53 @@ body {
 }
 
 
+/* Responsividade */
+@media (max-width: 1366px) {
+    .navbar-links {
+        margin-right: 0; /* Ajustar para telas menores */
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar-links {
+        margin-right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-icons {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .navbar-logo img {
+        margin-top: 10px;
+    }
+}
+
+/* Responsividade para telas maiores */
+@media (min-width: 1920px) {
+    .navbar-links {
+        margin-right: 650px; /* Ajuste para maior espaçamento */
+    }
+
+    .navbar-icons {
+        margin-right: 75px; /* Ajuste para maior espaçamento */
+    }
+
+    .navbar-logo img {
+        height: 100px; /* Ajuste para maior tamanho do logo */
+        width: 100px; /* Ajuste para maior tamanho do logo */
+    }
+}
+
+
+
 /* Seção de Serviços, Nossos Objetivos e Segmentos*/
 
 
@@ -137,7 +184,6 @@ body {
 
 .servico, .objetivo, .segmentos {
     background-color: rgb(0, 0, 0); /*cor de fundo*/
-    box-shadow: 0 80px 70px rgba(249, 246, 246, 0.1);  /*importante*/
     overflow: hidden; 
     width: calc(30% - 20px); /* Diminui a largura e o espaçamento em porcentagem */
     margin: 0 30px 60px; /* Aumenta o espaçamento entre as divs ()*/
@@ -177,14 +223,14 @@ body {
 }
 
 .servico p, .objetivo p, .segmentos p {
-    font-size: 19px;
+    font-size: 22px;
     color: #ffffff;
-    padding: 5px 30px; /* Adiciona padding para o texto (paragrafo */
+    padding: 10px 30px; /* Adiciona padding para o texto (paragrafo */
     font-family:'Gilroy-Medium';
     /*tentando deixar padronizado*/
     text-align: justify;
     text-align-last: justify;
-    line-height: 1.7;
+    line-height: 1.7; /*espaçamento estre as linhas*/
     hyphens: auto; /* Permite a quebra automática de palavras */
     
   
@@ -198,6 +244,39 @@ body {
     margin-bottom: 20px;
     margin-left: 20px;
 }
+
+/* Responsividade para telas maiores que 1920px */
+@media (min-width: 1920px) {
+    .servico, .objetivo, .segmentos {
+        width: calc(30% - 30px); /* Ajusta a largura e o espaçamento */
+        margin: 0 15px 60px; /* Ajuste do espaçamento */
+    }
+}
+
+/* Responsividade para telas entre 1366px e 1920px */
+@media (max-width: 1920px) and (min-width: 1366px) {
+    .servico, .objetivo, .segmentos {
+        width: calc(30% - 20px); /* Ajusta a largura e o espaçamento */
+    }
+}
+
+/* Responsividade para telas menores que 1366px */
+@media (max-width: 1366px) {
+    .servico, .objetivo, .segmentos {
+        width: calc(45% - 20px); /* Ajusta a largura para telas menores */
+        margin: 0 10px 30px; /* Ajusta o espaçamento entre as divs */
+    }
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .servico, .objetivo, .segmentos {
+        width: calc(90% - 20px); /* Ajusta a largura para telas muito pequenas */
+        margin: 0 0 30px; /* Ajusta o espaçamento entre as divs */
+    }
+}
+
+
 
 
 /* Começo do Saiba Mais*/
@@ -284,6 +363,8 @@ h2:hover{
     background-color: #ff4500;
 }
 
+
+
 /*ÍNICO DO PRINCIPAIS SERVIÇOS*/
 /* Contêiner geral */
 .container {
@@ -333,7 +414,6 @@ h2:hover{
     text-align: center;
     flex-grow: 1;
     margin-bottom: 80px;
-    box-shadow: 0 80px 70px rgba(81, 66, 66, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,8 +425,8 @@ h2:hover{
 /* Parágrafos dentro dos serviços */
 .service1 p, .service2 p {
     margin: 0;
-    padding: 35px; /* Adiciona padding para o texto */
-    font-size: 21px;
+    padding: 20px; /* Adiciona padding para o texto */
+    font-size: 23px;
     font-family: 'Gilroy-Medium';
     text-align: justify;
     text-align-last: justify;
@@ -361,7 +441,7 @@ h2:hover{
     width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
     height: auto; /* Mantém a proporção da imagem */
     border-radius: 25px; /* Arredonda apenas a imagem */
-    object-fit: cover;
+    /*object-fit: cover; - teste */
 }
 
 
@@ -387,6 +467,81 @@ h2:hover{
     margin-top: -50px;
 }
 
+/* Responsividade para telas menores que 1920px */
+@media (max-width: 1920px) {
+    .container h1 {
+        font-size: 30px; /* Ajusta o tamanho do título */
+        margin-left: 10px; /* Ajuste da posição horizontal */
+    }
+
+    .service1, .service2 {
+        width: 450px; /* Ajusta a largura do contêiner */
+        height: 500px; /* Ajusta a altura do contêiner */
+    }
+
+    .service1 img, .service2 img {
+        height: 300px; /* Ajusta a altura da imagem */
+        width: 500px; /* Ajusta a largura da imagem */
+    }
+}
+
+/* Responsividade para telas menores que 1366px */
+@media (max-width: 1366px) {
+    .container {
+        padding: 40px 2.5%; /* Ajusta o padding interno */
+        margin-left: 10px; /* Ajuste da posição horizontal */
+        margin-top: -20px; /* Ajusta a margem superior */
+    }
+
+    .container h1 {
+        font-size: 28px; /* Ajusta o tamanho do título */
+        margin-left: 5px; /* Ajuste da posição horizontal */
+    }
+
+    .services {
+        gap: 30px; /* Ajusta o espaçamento entre os contêineres */
+    }
+
+    .service1, .service2 {
+        width: 400px; /* Ajusta a largura do contêiner */
+        height: 450px; /* Ajusta a altura do contêiner */
+    }
+
+    .service1 img, .service2 img {
+        height: 250px; /* Ajusta a altura da imagem */
+        width: 400px; /* Ajusta a largura da imagem */
+    }
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 5%; /* Ajusta o padding interno */
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-top: 0; /* Remove a margem superior */
+    }
+
+    .container h1 {
+        font-size: 24px; /* Ajusta o tamanho do título */
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    .services {
+        flex-direction: column; /* Organiza os serviços em coluna */
+        gap: 20px; /* Ajusta o espaçamento entre os contêineres */
+    }
+
+    .service1, .service2 {
+        width: 100%; /* Ajusta a largura do contêiner para ocupar toda a largura disponível */
+        height: auto; /* Ajusta a altura do contêiner */
+    }
+
+    .service1 img, .service2 img {
+        height: 200px; /* Ajusta a altura da imagem */
+        width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura disponível */
+    }
+}
+
 
 /* Limita a largura máxima dos elementos com a classe .text para 300 pixels em telas com largura mínima de 500 pixels. */
 @media (min-width: 500px) {
@@ -394,6 +549,36 @@ h2:hover{
         max-width: 300px; /* Reduz largura máxima do texto */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* começando a div sobre a empresa - somente texto*/
@@ -443,7 +628,7 @@ h2:hover{
 .p1
 {
     color: white; /* Garante que o texto seja legível sobre a imagem de fundo */
-    margin-left: 750px;
+    margin-left: 710px;
     font-size:31px;
     font-family: 'Gilroy-Bold';
     
@@ -451,16 +636,45 @@ h2:hover{
 
 .p2 {
     color: white; /* Garante que o texto seja legível sobre a imagem de fundo */
-    margin-right:150px;
+    margin-right:120px; /*faz o texto ficar mais espalhado*/
     text-align: center;       /* Centraliza texto dentro do elemento */
-    font-size: 21px;
+    font-size: 25px;
     font-family:'Gilroy-Medium';
-    margin-left:800px;
+    margin-left:730px;
      /*tentando deixar padronizado*/
      text-align: justify;
      text-align-last: justify;
      line-height: 1.7;
      hyphens: auto; /* Permite a quebra automática de palavras */
+}
+
+/* Estilos para telas de até 1366px de largura */
+@media (max-width: 1366px) {
+    .titulo1 {
+        font-size: 4rem; /* tamanho reduzido */
+        margin-left: 5%;
+        margin-top: -600px; /* ajustado para posicionar corretamente acima */
+        background-color: #000;
+    }
+
+    .titulo2 {
+        font-size: 1.5rem; /* tamanho reduzido */
+        margin-left: 5%;
+        margin-top: 20px; /* ajustado para posicionar logo abaixo de .titulo1 */
+    }
+
+    .p1 {
+        font-size: 1.5rem; /* tamanho reduzido */
+        margin-left: 5%;
+        margin-top: 0px; /* ajustado para posicionar abaixo dos títulos */
+    }
+
+    .p2 {
+        font-size: 1.25rem; /* tamanho reduzido */
+        width: 90%; /* largura ajustada */
+        margin-left: 5%; /* centraliza o texto */
+        margin-top: 0px; /* ajuste para posicionar logo abaixo de .p1 */
+    }
 }
 
 
@@ -628,6 +842,7 @@ h2:hover{
     margin-top:0px;
     margin-bottom: 20px;
 }
+
 
 
 /*Parte do forms*/
