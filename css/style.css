@@ -116,12 +116,31 @@ body {
 }
 
 
-/* Responsividade */
+
+
+/* Responsividade telas um pouco menores - computador(laura) */
 @media (max-width: 1366px) {
     .navbar-links {
         margin-right: 0; /* Ajustar para telas menores */
     }
+    
+    .navbar-fundo1 img {
+        height:800px; /* Ajustei o valor para um tamanho maior */
+        width: 1000px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
 }
+
+.navbar-fundo1 .logocompleta {
+    position: absolute;
+    top: 55%; /*em relação ao topo*/
+    left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+    transform: translate(-50%, -50%);
+    height:200px; /*definindo o tamanho*/
+    width:400px; /*definindo o tamanho*/
+}
+}
+
+
 
 @media (max-width: 600px) {
     .navbar {
@@ -142,10 +161,27 @@ body {
 
     .navbar-logo img {
         margin-top: 10px;
+
     }
+
+    .navbar-fundo1 img {
+        height:800px; /* Ajustei o valor para um tamanho maior */
+        width: 485px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+      
 }
 
-/* Responsividade para telas maiores */
+   .navbar-fundo1 .logocompleta {
+    position: absolute;
+    top: 55%; /*em relação ao topo*/
+    left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+    transform: translate(-50%, -50%);
+    height:200px; /*definindo o tamanho*/
+    width:400px; /*definindo o tamanho*/
+}
+}
+
+/* Aplicando responsividade para telas maiores - tela dos computadores da escola*/
 @media (min-width: 1920px) {
     .navbar-links {
         margin-right: 650px; /* Ajuste para maior espaçamento */
@@ -156,8 +192,23 @@ body {
     }
 
     .navbar-logo img {
-        height: 100px; /* Ajuste para maior tamanho do logo */
-        width: 100px; /* Ajuste para maior tamanho do logo */
+        height:500px; /*definindo o tamanho - deixando maior*/
+        width:900px; /*definindo o tamanho - deixando maior*/
+    }
+
+    .navbar-fundo1 img {
+        height:1250px; /* Ajustei o valor para um tamanho maior */
+        width: 1530px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+    }
+
+    .navbar-fundo1 .logocompleta {
+        position: absolute;
+        top: 55%; /*em relação ao topo*/
+        left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
+        transform: translate(-50%, -50%);
+        height:400px; /*definindo o tamanho*/
+        width:800px; /*definindo o tamanho*/
     }
 }
 
@@ -648,33 +699,72 @@ h2:hover{
      hyphens: auto; /* Permite a quebra automática de palavras */
 }
 
-/* Estilos para telas de até 1366px de largura */
+
+/* Estilos para telas de até 600px de largura - menor tamanho*/
+
+/*------------------------------------*/
 @media (max-width: 1366px) {
-    .titulo1 {
-        font-size: 4rem; /* tamanho reduzido */
-        margin-left: 5%;
-        margin-top: -600px; /* ajustado para posicionar corretamente acima */
-        background-color: #000;
+
+    .titulo1{
+        font-size: 50px;
+        align-items: center;
     }
 
-    .titulo2 {
-        font-size: 1.5rem; /* tamanho reduzido */
-        margin-left: 5%;
-        margin-top: 20px; /* ajustado para posicionar logo abaixo de .titulo1 */
-    }
+    .titulo2{  
+        font-size: 20px;  
+        position: center;
+        }
 
     .p1 {
-        font-size: 1.5rem; /* tamanho reduzido */
+        font-size: 18px; /* tamanho reduzido */
         margin-left: 5%;
-        margin-top: 0px; /* ajustado para posicionar abaixo dos títulos */
+        margin-top: 350px; /* ajustado para posicionar abaixo dos títulos */
+        position: center;
     }
 
     .p2 {
         font-size: 1.25rem; /* tamanho reduzido */
         width: 90%; /* largura ajustada */
-        margin-left: 5%; /* centraliza o texto */
+        margin-left: 3%; /* centraliza o texto */
         margin-top: 0px; /* ajuste para posicionar logo abaixo de .p1 */
     }
+    .img1{
+        height:800px; /* Ajustei o valor para um tamanho maior */
+        width: 1366px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+    } 
+}
+
+
+/* Estilos para telas de até 600px de largura - menor tamanho*/
+@media (max-width: 600px) {
+
+    .titulo1{
+        font-size: 50px;
+        position: relative;
+    }
+
+    .titulo2{  
+        font-size: 20px;  
+        }
+
+    .p1 {
+        font-size: 18px; /* tamanho reduzido */
+        margin-left: 5%;
+        margin-top: 350px; /* ajustado para posicionar abaixo dos títulos */
+    }
+
+    .p2 {
+        font-size: 1.25rem; /* tamanho reduzido */
+        width: 90%; /* largura ajustada */
+        margin-left: 3%; /* centraliza o texto */
+        margin-top: 0px; /* ajuste para posicionar logo abaixo de .p1 */
+    }
+    .img1{
+        height:800px; /* Ajustei o valor para um tamanho maior */
+        width: 485px;  /* Ajustei o valor para um tamanho maior */
+        margin-top:-38px; /*37 fica um uma linha bem pequena (espaçamento)*/
+    } 
 }
 
 
@@ -817,18 +907,14 @@ h2:hover{
     font-family: 'Gilroy-Bold';   
 }
 
-
-
-
-
-/* Estilo das descrições */
+/* Estilo das descrições dos cargos  */
 .description {
     color: #fff; /* Cor do texto */
     padding: 10px;
 }
 
+/* Responsividade para telas de 1920x1080 */
 
-/* Estilo do texto */
 
 
 /*fim do carrossel*/
@@ -976,6 +1062,139 @@ form input#email {
 
 }
 
+
+@media (max-width: 600px) {
+    .contatos-section {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        margin-top:210px;
+       
+    }
+
+
+    
+    .contatos-image img {
+
+        background-color: #000000;
+        border-radius:10px;
+        margin-left:70px;
+        margin-top:55px;
+    
+    }
+
+    .contatos-form {
+        width: 80%;
+        background: #000000;
+        padding: 20px;
+        box-shadow: 0 0 20px #ff850b;
+        border-radius: 8px;
+        border-color: #af0909;
+        margin-left: 4%;
+    }
+    
+    .contatos-form h2 {
+        color: #ff7f00;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size:40px;
+        font-family: 'Gilroy-Bold';
+    }
+    
+    .contatos-form p {
+        color: #ffffff;
+        margin-bottom: 20px;
+        font-family:'Gilroy-Bold';
+        font-size:19px;
+        text-align: center;
+        margin-top:-5px;
+    
+    }
+    
+    .contatos-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contatos-form input, .contatos-form textarea {
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #000000;
+        /*border-radius: 5px -- para arredondar a borda se for preciso*/
+        font-family:'Gilroy-Medium';
+        box-shadow: 0 2px 5px rgba(255, 87, 51, 0.5); /* Sombra específica para o campo Nome */
+        height:50px; /*do mesmo tamanho que os demais elementos*/
+        width:335px; /*ajustado */
+        margin-left:4%; /*alinhado, foi preciso alterar*/
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+       
+    
+        
+    }
+    
+    /*Formatando o campo nome*/
+    
+    form input#nome {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height:10px;
+        width:150px;
+        margin-left:4%;
+        font-family: 'Gilroy-Medium';
+    }
+    
+    /*Formatando o campo telefone*/
+    form input#phone {
+        border-color: #ff8400;
+        box-shadow: 0 0 10px #ff850b;
+        height:10px;
+        width:150px;
+        margin-left:200px;
+        margin-top:-42px;
+        font-family: 'Gilroy-Medium';
+        
+        
+    
+    }
+    
+    /*Formatando o campo Email*/
+    form input#email {
+        border-color: #ff8400;
+        height:10px;
+        width:335px;
+        box-shadow: 0 0 10px #ff850b;
+        font-family: 'Gilroy-Medium';
+        margin-left:4%; /*alinhado*/
+    }
+    
+    
+    .contatos-form button {
+        padding: 10px;
+        border: none;
+        background-color: #ff7f00; /*se for preciso mudar a cor do botão */
+        color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        height:50px;
+        width:150px;
+        margin-left:120px;
+        border-color: #ff8400;
+        font-family: 'Gilroy-Medium';
+      
+    }
+    
+    
+    /*Para ficar mais escuro quando passar o mouse*/
+    .contatos-form button:hover {
+        background-color: #e66f00;
+        box-shadow: 0 0 70px #ffb7a7;
+        
+    }
+    
+    
+
+}
 
 /*parte do rodapé*/
 
