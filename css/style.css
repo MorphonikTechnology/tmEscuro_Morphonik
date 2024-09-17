@@ -27,7 +27,6 @@ body {
     src: url('Gilroy-Thin.ttf');
 }
 
-
 /*programando a nav bar no geral*/
 .navbar {
     display: flex;
@@ -68,13 +67,10 @@ body {
     font-size: 20px;
     transition: color 0.3s;
     font-family:'Gilroy-SemiBold'; /*ver como fazer isso*/
-    
-    
 }
 
 .navbar-links a:hover {
     color: #ff8a46;
-
 }
 
 /*para nao deixar um sobre o outro*/
@@ -112,9 +108,6 @@ body {
     width:70%; /*definindo o tamanho*/
     height:auto;
 }
-
-
-
 
 /* Responsividade telas um pouco menores - computador(laura) */
 @media (max-width: 1366px) {
@@ -208,10 +201,7 @@ body {
     }
 }
 
-
-
 /* Seção de Serviços, Nossos Objetivos e Segmentos*/
-
 
 .container1 {
     width: 100%;
@@ -244,7 +234,6 @@ body {
     display: block;
  
 }
-
 
 @font-face {  /*Fonte especifica para os titulos*/
     font-family: 'Gilroy-Bold';
@@ -323,9 +312,6 @@ body {
     }
 }
 
-
-
-
 /* Começo do Saiba Mais*/
 
 /* Inicia o tópico "Pretende fazer um projeto?" */
@@ -349,9 +335,6 @@ body {
     position: relative; /* Adiciona posição relativa para posicionar a imagem de fundo */
 }
 
-
-
-
 .background-image {
     background-size: cover;
     position: absolute; /* Posiciona a imagem de fundo absolutamente dentro da div */
@@ -359,8 +342,6 @@ body {
     left: 0;
     z-index: -1; /* Coloca a imagem de fundo atrás do conteúdo */
 }
-
-
 
 .conteudo h2 {
     font-size: 35px; /* Define o tamanho da fonte como 24 pixels */
@@ -375,7 +356,6 @@ body {
 h2:hover{
     color: #ff8a46;
 }
-
 
 .conteudo p {
     font-size: 23px;
@@ -409,8 +389,6 @@ h2:hover{
 .button:hover {
     background-color: #ff4500;
 }
-
-
 
 /*ÍNICO DO PRINCIPAIS SERVIÇOS*/
 /* Contêiner geral */
@@ -490,7 +468,6 @@ h2:hover{
     border-radius: 25px; /* Arredonda apenas a imagem */
     /*object-fit: cover; - teste */
 }
-
 
 /*arrumando individualmente as imagens*/
 .service1 img{
@@ -589,7 +566,6 @@ h2:hover{
     }
 }
 
-
 /* Limita a largura máxima dos elementos com a classe .text para 300 pixels em telas com largura mínima de 500 pixels. */
 @media (min-width: 500px) {
     .text {
@@ -597,39 +573,7 @@ h2:hover{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* começando a div sobre a empresa - somente texto*/
-
 
 @font-face {  /*Fonte especifica para os textos*/
     font-family: 'Gilroy-Medium';
@@ -672,8 +616,7 @@ h2:hover{
     font-family: 'Gilroy-Bold';
 }
 
-.p1
-{
+.p1{
     color: white; /* Garante que o texto seja legível sobre a imagem de fundo */
     margin-left: 710px;
     font-size:31px;
@@ -697,8 +640,6 @@ h2:hover{
 
 
 /* Estilos para telas de até 600px de largura - menor tamanho*/
-
-/*------------------------------------*/
 @media (max-width: 1366px) {
 
     .titulo1{
@@ -731,7 +672,6 @@ h2:hover{
     } 
 }
 
-
 /* Estilos para telas de até 600px de largura - menor tamanho*/
 @media (max-width: 600px) {
 
@@ -763,9 +703,7 @@ h2:hover{
     } 
 }
 
-
 /*Parte do carrossel*/
-
 .img2 {
     width:1519px;
     height: auto;
@@ -780,8 +718,6 @@ h2:hover{
     max-width: 1050px; /*espaçamento*/
     margin-top: -750px;
     margin-left:100px;
-    
-
 }
 
 /* Estilo do carrossel */
@@ -789,9 +725,7 @@ h2:hover{
     position: relative;
     width: 60%;
     display:flex;
-    overflow: hidden;
-    
-    
+    overflow: hidden; 
 }
 
 /* Estilo dos itens do carrossel */
@@ -807,7 +741,6 @@ h2:hover{
     display: block; /* Mostrar o item ativo */
 }
 
-
 /* Estilo das imagens */
 .carousel-item img {
     max-width: 100%; /* Ajusta a largura máximapara o tamanho do contêiner */
@@ -816,7 +749,6 @@ h2:hover{
     width: 250px;
     border-radius: 10px;
 }
-
 
 /* Estilo das setas do carrossel */
 .carousel .arrows {
@@ -829,9 +761,7 @@ h2:hover{
     margin-top: -800;
 }
 
-
-
-/*Posibilidades de fonte+*/
+/*Posibilidades de fonte*/
 
 @font-face {  /*Fonte especifica para os textos*/
     font-family: 'Gilroy-SemiBold';
@@ -847,8 +777,6 @@ h2:hover{
     font-family: 'Gilroy-Medium';
     src: url('Gilroy-Medium.ttf');
 }
-
-
 
 /*Classe dos Nomes dos Funcionários*/ 
 
@@ -910,11 +838,7 @@ h2:hover{
 }
 
 /* Responsividade para telas de 1920x1080 */
-
-
-
 /*fim do carrossel*/
-
 
 .linha1 {
     width: 90%;
@@ -925,11 +849,7 @@ h2:hover{
     margin-bottom: 20px;
 }
 
-
-
 /*Parte do forms*/
-
-
 .contatos-section {
     display: flex;
     justify-content: space-around;
@@ -981,9 +901,6 @@ h2:hover{
     margin-left:70px; /*alinhado*/
     border-color: #ff8400;
     box-shadow: 0 0 10px #ff850b;
-   
-
-    
 }
 
 /*Formatando o campo nome*/
@@ -1006,9 +923,6 @@ form input#phone {
     margin-left:315px;
     margin-top:-52px;
     font-family: 'Gilroy-Medium';
-    
-    
-
 }
 
 /*Formatando o campo Email*/
@@ -1020,7 +934,6 @@ form input#email {
     font-family: 'Gilroy-Medium';
     margin-left:70px; /*alinhado*/
 }
-
 
 .contatos-form button {
     padding: 10px;
@@ -1035,7 +948,6 @@ form input#email {
     border-color: #ff8400;
     font-family: 'Gilroy-Medium';
 }
-
 
 /*Para ficar mais escuro quando passar o mouse*/
 .contatos-form button:hover {
@@ -1055,9 +967,7 @@ form input#email {
     border-radius:10px;
     margin-left:70px;
     margin-top:55px;
-
 }
-
 
 @media (max-width: 600px) {
     .contatos-section {
@@ -1067,16 +977,11 @@ form input#email {
         margin-top:210px;
        
     }
-
-
-    
     .contatos-image img {
-
         background-color: #000000;
         border-radius:10px;
         margin-left:70px;
         margin-top:55px;
-    
     }
 
     .contatos-form {
@@ -1104,7 +1009,6 @@ form input#email {
         font-size:19px;
         text-align: center;
         margin-top:-5px;
-    
     }
     
     .contatos-form form {
@@ -1123,10 +1027,7 @@ form input#email {
         width:335px; /*ajustado */
         margin-left:4%; /*alinhado, foi preciso alterar*/
         border-color: #ff8400;
-        box-shadow: 0 0 10px #ff850b;
-       
-    
-        
+        box-shadow: 0 0 10px #ff850b;  
     }
     
     /*Formatando o campo nome*/
@@ -1149,9 +1050,6 @@ form input#email {
         margin-left:200px;
         margin-top:-42px;
         font-family: 'Gilroy-Medium';
-        
-        
-    
     }
     
     /*Formatando o campo Email*/
@@ -1163,7 +1061,6 @@ form input#email {
         font-family: 'Gilroy-Medium';
         margin-left:4%; /*alinhado*/
     }
-    
     
     .contatos-form button {
         padding: 10px;
@@ -1180,20 +1077,15 @@ form input#email {
       
     }
     
-    
     /*Para ficar mais escuro quando passar o mouse*/
     .contatos-form button:hover {
         background-color: #e66f00;
         box-shadow: 0 0 70px #ffb7a7;
         
     }
-    
-    
-
 }
 
 /*parte do rodapé*/
-
 @font-face {  /*Fonte especifica para os textos*/
     font-family: 'Gilroy-Medium';
     src: url('Gilroy-Medium.ttf');
