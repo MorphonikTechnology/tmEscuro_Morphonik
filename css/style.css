@@ -7,8 +7,6 @@ body {
 /*A fonte Gilroy foi exportada */
 /*@font-face para poder utilizar as fontes exportadas*/
 
-
-
 @font-face {  /*Fonte especifica da NavBar*/
     font-family: 'Gilroy-Bold';
     src: url('Gilroy-Bold.ttf');
@@ -28,7 +26,6 @@ body {
     font-family: 'Gilroy-Thin';
     src: url('Gilroy-Thin.ttf');
 }
-
 
 
 /*programando a nav bar no geral*/
@@ -112,7 +109,8 @@ body {
     left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
     transform: translate(-50%, -50%);
     height:400px; /*definindo o tamanho*/
-    width:800px; /*definindo o tamanho*/
+    width:70%; /*definindo o tamanho*/
+    height:auto;
 }
 
 
@@ -139,8 +137,6 @@ body {
     width:400px; /*definindo o tamanho*/
 }
 }
-
-
 
 @media (max-width: 600px) {
     .navbar {
@@ -1291,8 +1287,5 @@ font-family:'Gilroy-Medium';
     margin-top:-93px;
     display: flex;
     padding-left:80%; /*espaço entre os outro elementos*/
-    font-family:'Gilroy-Medium';
-
-    
+    font-family:'Gilroy-Medium';  
 }
-
