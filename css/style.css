@@ -57,7 +57,7 @@ body {
 }
 
 .navbar-links li {
-    margin: 0 20px;
+    margin: 0 15px;
 
 }
 
@@ -105,8 +105,7 @@ body {
     left: 50%;  /*porcentagem da esquerda - utilizar outros tipos*/
     transform: translate(-50%, -50%);
     height:400px; /*definindo o tamanho*/
-    width:70%; /*definindo o tamanho*/
-    height:auto;
+    width:900px; /*definindo o tamanho*/
 }
 
 /* Responsividade telas um pouco menores - computador(laura) */
