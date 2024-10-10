@@ -1180,3 +1180,183 @@ font-family:'Gilroy-Medium';
     padding-left:80%; /*espaço entre os outro elementos*/
     font-family:'Gilroy-Medium';  
 }
+
+
+/* RESPONSIVIDADE PARA TELA DO CELULAR */
+@media (max-width: 768px) { 
+    .navbar {
+        flex-direction: row; /* Mantém a navbar em coluna em telas menores */
+        align-items: flex-start; /* Alinha os itens ao centro verticalmente */
+        gap: 1px;
+    }
+
+    .navbar-links {
+        flex-direction: column; 
+        align-items: center; 
+        display: flex; /* Assegura que a navbar-links funcione como um flex container */
+        flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte quando o espaço acabar */
+        gap: 2px; /* Define o espaçamento entre os links */
+        justify-content: center;
+        
+    }
+    .navbar-links a {
+        display: block;
+        width: 90%; /* Faz com que o link ocupe a largura total do item */
+        padding: 5px 0; /* Ajusta o padding para melhorar a área clicável */
+        text-align: center; /* Garante que o texto fique centralizado */
+    }
+    .navbar-icons{
+        display: flex; /* Assegura que os ícones fiquem em linha */
+        flex-direction: row; /* Disposição em linha */
+        flex-wrap: wrap; /* Permite que os ícones mudem de linha se necessário */
+        gap: 2px; /* Define o espaçamento entre os ícones */
+        padding: 0; /* Remove padding, se necessário */
+        margin: 0; /* Remove margin, se necessário */
+    }
+    .navbar-icons img {
+        width:14px; /* Ajuste o tamanho do ícone */
+        height: auto; /* Mantém a proporção do ícone */
+    }
+
+
+    .titulo1{
+        display: block;
+        width: 90%; 
+        padding: 5px 0; 
+        text-align: left;
+    }
+
+    .sobreempresa {
+        flex-direction: column; /* Coloca a seção sobre empresa em coluna */
+        align-items: center;
+    }
+
+    .servico, .objetivo, .segmentos {
+        flex: 1 1 100%; /* Cada item ocupa 100% em telas menores */
+    }
+
+    .services {
+        flex-direction: column; /* Coloca os serviços em coluna */
+        align-items: center;
+    }
+
+    .service1, .service2 {
+        flex: 1 1 100%; /* Cada serviço ocupa 100% em telas menores */
+    }
+
+    .carousel {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .carousel-item {
+        width: 100%;
+        max-width: 300px; /* Ajusta a largura máxima em telas menores */
+    }
+    
+    .description {
+        font-size: 12px;
+    }
+
+    .arrows {
+        justify-content: center;
+        margin-top: 10px; /* Reduz o espaço acima em telas menores */
+    }
+    
+    .st1, .st2 {
+        bottom: 10px; /* Traz as setas mais para cima em telas menores */
+    }
+
+    .contatos-section {
+        flex-direction: column; /* Coloca o formulário e a imagem em coluna */
+        align-items: center;
+    }
+
+    .contatos-form {
+        width: 100%; /* Faz o formulário ocupar toda a largura */
+        padding: 10px;
+    }
+
+    .contatos-image {
+        display: none; /* Esconde a imagem nos dispositivos móveis, se necessário */
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+        align-items: flex-start;
+        width: 100%; 
+        flex-wrap: wrap;
+    }
+
+    /*.footer-section h3 {
+            margin-left: -2px;
+        }*/
+
+    .footer-section {
+        flex-direction: row; /* Altera a direção para linha */
+        align-items: left; /* Alinha os elementos à esquerda */
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 2px; 
+        justify-content: left;
+        margin-left: -5px;
+    }
+    
+    .footer-section p {
+        display: flex; 
+        flex-direction: row; /* Altera a direção para linha */
+        flex-wrap: wrap; 
+        gap: 10px; 
+        padding: 0; 
+        margin: -15px; 
+        margin-left: 20px;
+    }
+    
+    .footer-texto {
+        width: 100%; /* Garante que o texto ocupe toda a largura da tela em dispositivos móveis */
+        text-align: left; /* Alinha o texto à esquerda */
+        padding: 10px;
+    }
+    
+    .footer-texto p { 
+        padding: 0; 
+        margin: 10;
+        text-align: left; /* Alinha o texto à esquerda */
+        flex-wrap: wrap;
+        margin-left: -300px;
+        margin-top: 60px;
+    }
+    .linha1{
+        flex-direction: row; 
+        align-items: left;
+        margin-left: 20px;
+    }
+
+    .linha3{
+        flex-direction: row; 
+        align-items: left;
+        margin-left: 20px;
+    }
+    .copy{
+        flex-direction: row; 
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-icons .icon img {
+        width: 20px; /* Ajusta o tamanho dos ícones em telas pequenas */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Reduz o tamanho do título */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Reduz o tamanho do subtítulo */
+    }
+}
