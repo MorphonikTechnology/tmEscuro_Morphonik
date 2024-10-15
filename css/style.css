@@ -1290,28 +1290,32 @@ font-family:'Gilroy-Medium';
         flex-wrap: wrap;
     }
 
-    /*.footer-section h3 {
-            margin-left: -2px;
-        }*/
-
     .footer-section {
-        flex-direction: row; /* Altera a direção para linha */
-        align-items: left; /* Alinha os elementos à esquerda */
-        display: flex; 
+        display: flex;
+        flex-direction: row; 
         flex-wrap: wrap; 
-        gap: 2px; 
-        justify-content: left;
-        margin-left: -5px;
+        justify-content: space-between; 
+        margin: 0 auto; 
+        padding: 10px;
+        max-width: 100%; 
     }
     
     .footer-section p {
-        display: flex; 
-        flex-direction: row; /* Altera a direção para linha */
-        flex-wrap: wrap; 
-        gap: 10px; 
-        padding: 0; 
-        margin: -15px; 
-        margin-left: 20px;
+        flex: 1; /* Faz as colunas ocuparem o mesmo espaço */
+        text-align: right; 
+        margin: 0px; 
+        padding: 5px;
+        margin-left: -170px;
+        margin-top: 50px;
+    }
+    
+    .footer-section h3 {
+        flex-direction: row; 
+        width: 100%; /* Mantém o título no topo em toda a largura */
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: -170px;
+        margin-top: 40px;
     }
     
     .footer-texto {
@@ -1339,12 +1343,18 @@ font-family:'Gilroy-Medium';
         align-items: left;
         margin-left: 20px;
     }
-    .copy{
-        flex-direction: row; 
-        align-items: center;
+    .copy {
+        display: block;
+        flex-direction: row; /* Faz com que o copyright fique embaixo dos ícones */
         flex-wrap: wrap;
-        margin-top: 60px;
+        align-items: center; 
+        justify-content: center;
+        width: 100%; 
+        text-align: center; 
+        margin-top: 20px; 
+        z-index: 10;
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -1358,5 +1368,15 @@ font-family:'Gilroy-Medium';
 
     h2 {
         font-size: 1.2em; /* Reduz o tamanho do subtítulo */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-section {
+        flex-direction: column; /* Em telas menores, empilha os itens verticalmente */
+    }
+
+    .footer-section p {
+        width: 100%; /* Garante que cada coluna ocupe 100% da largura */
     }
 }
